@@ -5,8 +5,8 @@ from string import ascii_lowercase
 class Bool_Operators():
     '''Boolean Operators: AND, OR, XOR, NAND, NOR, XNOR, NOT'''
 
-    '''Initialize boolean operators'''
     def __init__(self, volts, and_bool=None, or_bool=None, xor_bool=None, nand_bool=None, nor_bool=None, xnor_bool=None, not_bool=None):
+        '''Initialize boolean operators'''
         self.and_bool = and_bool
         self.or_bool = or_bool
         self.xor_bool = xor_bool
@@ -16,15 +16,15 @@ class Bool_Operators():
         self.not_bool = not_bool
         self.volts = volts
 
-    '''Input which operator to be tested'''
+        '''Input which operator to be tested'''
 
-    '''Loop through volts'''
     def volt_loop(self):
+        '''Loop through volts'''
         for volt in self.volts:
             print(volt)
 
-    '''AND Operator'''
     def and_operator(self):
+        '''AND Operator'''
         print("AND Operator")
         for volt in self.volts:
             if volt == [1, 1]:
@@ -32,8 +32,8 @@ class Bool_Operators():
             else:
                 print(str(volt) + ' out: ' + str(0))
 
-    '''OR Operator'''
     def or_operator(self):
+        '''OR Operator'''
         print("OR Operator")
         for volt in self.volts:
             if volt == [0, 0]:
@@ -41,8 +41,8 @@ class Bool_Operators():
             else:
                 print(str(volt) + ' out: ' + str(1))
 
-    '''XOR Operator (Exclusive OR)'''
     def xor_operator(self):
+        '''XOR Operator (Exclusive OR)'''
         print("XOR Operator")
         for volt in self.volts:
             if volt == [0, 1] or volt == [1, 0]:
@@ -50,8 +50,8 @@ class Bool_Operators():
             else:
                 print(str(volt) + ' out: ' + str(0))
 
-    '''NAND Operator'''
     def nand_operator(self):
+        '''NAND Operator'''
         print("NAND Operator")
         for volt in self.volts:
             if volt == [1, 1]:
@@ -59,8 +59,8 @@ class Bool_Operators():
             else:
                 print(str(volt) + ' out: ' + str(1))
     
-    '''NOR Operator'''
     def nor_operator(self):
+        '''NOR Operator'''
         print("NOR Operator")
         for volt in self.volts:
             if volt == [0, 0]:
@@ -68,8 +68,8 @@ class Bool_Operators():
             else:
                 print(str(volt) + ' out: ' + str(0))
 
-    '''XNOR Operator'''
     def xnor_operator(self):
+        '''XNOR Operator'''
         print("XNOR Operator")
         for volt in self.volts:
             if volt == [0, 0] or volt == [1, 1]:
