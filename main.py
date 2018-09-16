@@ -36,29 +36,31 @@ class UserInput():
 #        #Which operators for each pair?
 
 
-class LogicOperators():
-    '''Logic Operators and output for each scalable w/
+class LogicalOperators():
+    '''Logical Operators and output for each scalable w/
     multiple inputs: AND, OR, XOR, NAND, NOR, XNOR, NOT'''
 
     def __init__(self, logic_dict)
         self.logic_dict = logic_dict
-        self.logic_pair = logic_pair
+        self.logic_list = logic_list
 
     def and_operator(self):
-        #take pair from dict and test
-        while self.logic_pair:
-            val = self.logic_pair.pop(0)
-            if val == 1:
-                continue
-            elif val == 0:
-                return(0)
-                print("out: " + str(0))
-            if self.logic_pair = []:
-                return(1)
-                print("out: " + str(1))
+        #take list from dict and test
+        #if 10 nums in list take length of list then add nums in list to see if it equals length of list
+        sum_logic_list = sum(self.logic_list)
+        len_logic_list = len(self.logic_list)
+        if len_logic_list == sum_logic_list:
+            return(1)
+            print("Out: " + str(1))
+        elif len_logic_list != sum_logic_list:
+            return(0)
+            print("Out: " + str(0))
+    
+    def or_operator(self)
+        
 
 
-class ConnectOperators(LogicOperators):
+class ConnectOperators(LogicalOperators):
 
 
 class OutputTable(ConnectOperators):
