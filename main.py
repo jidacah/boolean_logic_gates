@@ -75,7 +75,7 @@ class LogicalOperators():
     def or_operator(self):
         '''Perform the OR operator on the boolean list.
         True if any input is true.'''
-        if self.len_logic_list == self.sum_logic_list or self.len_logic_list != self.sum_logic_list:
+        if self.len_logic_list > 0:
             self.return_true_value()
         elif self.len_logic_list == 0:
             self.return_false_value()
