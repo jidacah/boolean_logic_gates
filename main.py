@@ -40,7 +40,7 @@ class LogicalOperators():
     '''Logical Operators and output for each scalable w/
     multiple inputs: AND, OR, XOR, NAND, NOR, XNOR, NOT'''
 
-    def __init__(self, logic_dict)
+    def __init__(self, logic_dict):
         self.logic_dict = logic_dict
         self.logic_list = logic_list
 
@@ -75,8 +75,7 @@ class LogicalOperators():
     def or_operator(self):
         '''Perform the OR operator on the boolean list.
         True if any input is true.'''
-        if self.len_logic_list == self.sum_logic_list
-        or self.len_logic_list != self.sum_logic_list:
+        if self.len_logic_list == self.sum_logic_list or self.len_logic_list != self.sum_logic_list:
             self.return_true_value()
         elif self.len_logic_list == 0:
             self.return_false_value()
@@ -119,9 +118,9 @@ class LogicalOperators():
         Inverses the value given.'''
         if self.sum_logic_list > 1:
             print("Error: NOT Gate can only take one value.")
-        elif self.sum_logic_list = 1:
+        elif self.sum_logic_list == 1:
             self.return_true_value()
-        elif self.sum_logic_list = 0:
+        elif self.sum_logic_list == 0:
             self.return_false_value()
 
 
@@ -129,7 +128,7 @@ class ConnectOperators(LogicalOperators):
 
 
 class OutputTable(ConnectOperators):
-
+    
 
 
 
