@@ -1,9 +1,8 @@
 
 from string import ascii_lowercase
 
-class UserInput():
 
-class BoolOperators():
+class Bool_Operators():
     '''Boolean Operators: AND, OR, XOR, NAND, NOR, XNOR, NOT'''
 
     def __init__(self, volts, and_bool=None, or_bool=None, xor_bool=None, nand_bool=None, nor_bool=None, xnor_bool=None, not_bool=None):
@@ -18,19 +17,6 @@ class BoolOperators():
         self.volts = volts
 
         '''Input which operator to be tested'''
-    #must first input the boolean inputs
-    def request_input_amount(self):
-        '''Request user how many inputs they would like to use.'''
-        self.input_amount = int(input("How many inputs for the operator?"))
-        if self.input_amount > 1:
-            self.operator = input("Choose one of the following operators: 
-            \nAND, OR, XOR, NAND, NOR, XNOR")
-            if self.operator = 'AND':
-                and_operator()
-            if self.operator = 
-
-
-
 
     def volt_loop(self):
         '''Loop through volts'''
@@ -132,7 +118,7 @@ def request_user_bool_pairs():
 
 bool_pair_values = request_user_bool_pairs()
 
-test = BoolOperators(bool_pair_values)
+test = Bool_Operators(bool_pair_values)
 test.volt_loop()
 test.and_operator()
 test.or_operator()
