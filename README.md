@@ -22,3 +22,4 @@ However, it'll be completely interactive soon with drag-and-drop logic gates--po
 * add database for storing previous logic puzzles
   * public accessible
   * user accessible
+* add practice for logic gates/right&wrong
