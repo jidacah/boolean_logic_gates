@@ -47,6 +47,16 @@ class UserInput():
     # refer to pics for logic gate referred to these connections
     # compute outputs
 
+    # possibly use 4 objects: input, operator, output, & layers(max connections btwn operators & outputs)
+    #i.e. use 2 layers for only i/o, use 3 for i -> op -> o, use 4 for i -> op -> op -> o.
+
+# make general class that declares all the variables for each object;
+# use inheritance for each object and their functions
+# input for holding 0/1 (inherit from user input above)
+# operators & their functions(LogicalOperators())
+# output (create extra output vars if requested for each operator output)
+# layers (logic for connecting and max connections btwn in/op/out)
+
 class LogicalOperators():
     '''Logical Operators and output for each scalable w/
     multiple inputs: AND, OR, XOR, NAND, NOR, XNOR, NOT'''
