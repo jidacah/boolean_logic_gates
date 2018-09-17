@@ -6,7 +6,10 @@ class UserInput():
 
     def __init__(self):
         '''Initialize user input class.'''
-        self.var_list = var_list
+        self.var_list = var_list # list of variables
+        self.in_amt = in_amt # input amount
+        self.op_amt = op_amt # operator amount
+        self.out_amt = out_amt # output amount
 
     def create_variables(self):
         '''Create variables to be used in each method.'''
@@ -14,28 +17,36 @@ class UserInput():
         for var in ascii_lowercase:
             self.var_list.append(var) # add a-z to var_list
 
-    def req_pair_amt(self):
-        '''Request the amount of boolean pairs to test for.'''
-        #request how many pairs
-        #assign each pair to a variable i.e. pair_a, pair_b w/ for loop
+    def object_amount(self):
+        '''Request user how many objects in circuit.
+        Inputs, Operators, Outputs.'''
+        self.in_amt = int(input("How many inputs: "))
+        self.op_amt = int(input("How many operators: "))
+        self.out_amt = int(input("How many outputs: "))
 
-    def req_input_amt(self):
-        '''Request the amount of inputs in each pair.'''
-        #pair_a will have arbitrary number of inputs
-        #pair_b will have different number of inputs
+    def object_variables(self):
+        '''Assign variables to each object.
+        Inputs, Operators, Outputs.'''
+        #add dictionary w/ empty values but keys for
+        #each input, operator, & output
 
-    def input_vals(self):
-        '''Input the boolean values in each pair.'''
-        #Pair A (Input 5 boolean vals): 01100
-        #Check to make sure values are the amount requested for the pair
-        #Check to make sure values are 0 or 1
-        #return pairs in dict w/ vals attached
+    # use letters for output variables; out_x, out_y
+    # use numbers for operators; op_1, op_2
+    # use letters for inputs; in_a, in_b
 
-#    def req_operators(self):
-#        '''Request which operators to be tested on for each pair.'''
-#        #Which operators for each pair?
+    # define amt of inputs, operators, outputs
+    # assign variables to each object ^
+    # what will inputs connect to:
+    #(in_b -> op_d(NOT)), (in_a -> op_1(XOR)), (in_c -> op_b(NOT))
+    #print each operator var with corresponding op(and,or,etc) before user has to input
+    # what will operators connect to:
+    #print each operator var with corresponding op(and,or,etc) before user has to input
+    #plus current connections
+    #(op_a(XOR) -> out_x, op_b(NOR)), (op_d(NOT) -> op_a(XOR), op_e(NOT)),
+    #(op_b(NOR) -> out_y, op_c(AND)), (op_e(NOT) -> op_c(AND)), (op_c -> out_z)
+    # refer to pics for logic gate referred to these connections
+    # compute outputs
 
-#split up sum and length of lists later
 class LogicalOperators():
     '''Logical Operators and output for each scalable w/
     multiple inputs: AND, OR, XOR, NAND, NOR, XNOR, NOT'''
@@ -48,7 +59,9 @@ class LogicalOperators():
         '''Perform basic operations used in later
         methods for logic lists. Run before using
         other operators and methods.'''
-        #take list from dictionary
+        #take list from dictionary and store into
+        #temporary list to be manipulated for
+        #each operator
         
 
         self.sum_logic_list = sum(self.logic_list)
@@ -124,10 +137,10 @@ class LogicalOperators():
             self.return_false_value()
 
 
-class ConnectOperators(LogicalOperators):
+#class ConnectOperators(LogicalOperators):
 
 
-class OutputTable(ConnectOperators):
+#class OutputTable(ConnectOperators):
     
 
 
