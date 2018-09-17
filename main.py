@@ -10,6 +10,7 @@ class UserInput():
         self.in_amt = in_amt # input amount
         self.op_amt = op_amt # operator amount
         self.out_amt = out_amt # output amount
+        self.layer_amt = layer_amt # layer amount(max connections btwn in/op/out)
 
     def create_variables(self):
         '''Create variables to be used in each method.'''
@@ -23,6 +24,7 @@ class UserInput():
         self.in_amt = int(input("How many inputs: "))
         self.op_amt = int(input("How many operators: "))
         self.out_amt = int(input("How many outputs: "))
+        self.layer_amt = int(input("How many layers: "))
 
     def object_variables(self):
         '''Assign variables to each object.
