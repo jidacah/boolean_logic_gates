@@ -10,10 +10,7 @@ However, it'll be completely interactive soon with drag-and-drop logic gates--po
 
 
 ## TO-DO:
-* add NOT operator (unary)
-* generalize operator classes
-  * use inheritance for binary and unary operators
-* extend so user can add multiple boolean pairs > 2
+* use django & javascript(reactjs possibly)
 * add connection of operators
   * through user input
 * add connection jumps
